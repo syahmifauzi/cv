@@ -1,0 +1,69 @@
+/********** MEDIUM SCREEN SIZE **********/
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 15px;
+  }
+  aside {
+    header h1 {
+      word-spacing: 0px;
+    }
+    section li {
+      i {
+        width: 6em;
+      }
+      &:hover i {
+        width: 8em;
+      }
+    }
+  }
+  /********** PAGE LAYOUT **********/
+  .container {
+    overflow: hidden;
+    display: block;
+  }
+  main {
+    width: 100%;
+  }
+  aside {
+    // margin-left: -30%;
+    width: 100%;
+  }
+}
+
+
+/********** SMALL SCREEN SIZE **********/
+@media screen and (max-width: 720px) {
+  main {
+    padding: 10px;
+    section {
+      header {
+        i {
+          position: static;
+          transform: scale(1);
+          color: #fff;
+          margin-right: 10px;
+        }
+        h2 {
+          border-radius: 5px;
+        }
+      }
+      &:hover header i {
+        animation: none;
+        color: #fff;
+      }
+    }
+  }
+
+  aside section li {
+    i {
+      width: 4em;
+    }
+    &:hover i {
+      width: 5em;
+    }
+  }
+
+  .skillset li {
+    width: 100%;
+  }
+}

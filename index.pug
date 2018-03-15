@@ -1,0 +1,166 @@
+mixin skill(skill, percent)
+  li= skill
+    div: div(style="width:" + percent + "%") #{percent}%
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title CV | Syahmi Fauzi
+    meta(name="author", content="Syahmi Fauzi")
+    meta(name="description", content="My curriculum vitae (cv)")
+    meta(name="keywords", content="cv, resume, frontend, backend, web-developer")
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/all.css")
+    link(rel="stylesheet", href="assets/css/app.css")
+  body
+    .container
+      aside
+        header
+          img(src="assets/img/sf2.jpg", alt="Syahmi Fauzi")
+          h1 Syahmi Fauzi
+          p Web Developer
+        section
+          h2 Contact
+          ul
+            li
+              i.fa.fa-envelope
+              a(href="mailto:brosyahmifauzi@gmail.com") brosyahmifauzi@gmail.com
+            li
+              i.fa.fa-home
+              | Perak, Malaysia
+            li
+              i.fa.fa-globe
+              a(href="http://www.syahmifauzi.com/" target="_blank") www.syahmifauzi.com
+        section
+          h2 Hobbies
+          ul
+            li
+              i.fa.fa-code
+              | Coding &amp; Programming
+            li
+              i.fa.fa-bicycle
+              | Cycling
+        section
+          h2 Languages
+          ul
+            li
+              i.fa.fa-check
+              | Malay
+            li
+              i.fa.fa-check
+              | English
+        div.clearfix
+      main
+        section
+          header
+            h2
+              i.fa.fa-user
+              | Profile
+          article
+            p
+              | My name is Syahmi Fauzi. I'm a front-end web developer based in Malaysia.
+              | When I was 16 years old, I join D-Code Camp in Kuching, Sarawak as a
+              | participant. That was the first time I meet HTML, CSS and JavaScript.
+              | Then, I continue being a self-taught web developer and now I can make
+              | from small to medium size of websites.
+            p
+              | When It comes to frontend web development, I really like working with
+              | preprocessor like Pug and Sass and a building tool like GulpJS because
+              | they help make the development faster.
+            p
+              | In university, I participate in coding and programming competition. This 
+              | kind of competition teach me how to solve real world problems. It's tough 
+              | sometimes but fun to learnt especially when you have friends who are as 
+              | passion as you.
+            p
+              | I'm a kind of people who loves building things on the Internet and share
+              | it with others. Github is my favourite place to host all of those things.
+        section
+          header
+            h2
+              i.fa.fa-graduation-cap
+              | Education
+          article
+            h3 International Islamic University Malaysia (IIUM)
+            ul
+              li Bachelor of Computer Science
+              li 2017 - Now
+          article
+            h3 Centre for Foundation Studies IIUM
+            ul
+              li Foundation
+              li 2015 - 2017
+          article
+            h3 Giat Mara Bandar Kuching
+            ul
+              li Computer System Technology (Short Course)
+              li Jan 2015 - Jun 2015
+          article
+            h3 SMK Tun Abang Haji Openg
+            ul
+              li Secondary School
+              li 2010 - 2014
+        section
+          header
+            h2
+              i.fa.fa-laptop
+              | Experiences
+          article
+            h3 Freelance Web Developer
+            ul
+              li Focuses on frontend development
+              li 2016 - Now
+        section
+          header
+            h2
+              i.fa.fa-cog
+              | Skills
+          ul.skillset
+            +skill('HTML5', '80')
+            +skill('CSS3', '80')
+            +skill('JavaScript', '50')
+            +skill('jQuery', '50')
+            +skill('C/C++', '80')
+            +skill('Java', '60')
+            +skill('SQL (MySQL & Oracle)', '70')
+            +skill('Git (Github)', '70')
+            +skill('Pug (HTML Preprocessor)', '70')
+            +skill('Sass (CSS Preprocessor)', '70')
+            +skill('Jekyll (Static Site Generator)', '80')
+            +skill('Grav CMS (Flat File CMS)', '70')
+            +skill('Linux', '70')
+            div.clearfix
+        section
+          header
+            h2
+              i.fa.fa-trophy
+              | Achievement
+          article
+            h3 Silver Medal in IUCEL 2017
+            ul
+              li International University Carnival on e-Learning (IUCEL 2017)
+              li Project Title: eSiyahah
+              li Project URL: #[a(href="http://www.esiyahah.com" target="_blank") www.eSiyahah.com]
+              li Project Description: Arabic for Tourism Purpose Via Web-Based Learning
+        section
+          header
+            h2
+              i.fa.fa-sticky-note
+              | References
+          article
+            h3 Mohammad Taufiq Abdul Ghani
+            ul
+              li Lecturer
+              li Department of Modern Languages
+              li Universiti Pendidikan Sultan Idris, 35900, Tanjung Malim, Perak
+              li: a(href="mailto:taufiq@fbk.upsi.edu.my") taufiq@fbk.upsi.edu.my
+          article
+            h3 Wan Ab Aziz Wan Daud
+            ul
+              li Lecturer
+              li Centre for Languages &amp; Generic Development
+              li Universiti Malaysia Kelantan, 16300, Bachok, Kelantan
+              li: a(href="mailto:wabazizwd@gmail.com") wabazizwd@gmail.com
